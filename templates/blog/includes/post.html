@@ -1,0 +1,28 @@
+{% extends "blog/base.html" %} 
+{% load static %}
+{% block title %}posts
+{% endblock %}
+{% block css_files %}
+<link rel="stylesheet" href="{% static 'blog/post.css' %}">
+{% endblock %}
+{% block content %}
+
+    <a href="{% url 'selectedpost' post.slug %}" class="card-link">
+        
+            <div class="card">
+                {% if post.image_name %}
+                <img class="rounded-circle" src="{{ post.image_name.url }}" alt="{{ post.title }}" width="200px" height="200px">
+                <div class="card-body">
+                    <h3>{{ post.title }}</h3>
+                </div>
+                {% else %}
+                <div class="without-img">
+                    <h3>{{ post.title }}</h3>
+                </div>
+                {% endif %}
+                
+            </div>
+        
+    <a>
+    
+    {% endblock %}
