@@ -8,7 +8,7 @@
 }
 #comment-form{
     width: 90%;
-    margin: 3rem auto;
+    margin: 1rem auto;
     max-width: 40rem;
     border-radius: 12px;
     background-color: white;
@@ -97,6 +97,19 @@
     font-weight: lighter;
 }
 
+#comments h5,
+#comments h6{
+    color:rgb(87, 84, 84);
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: smaller;
+}
+#comments h3,
+#comments h4
+{
+    font-size: large;
+}
+
 #comments ul {
     list-style: none;
     margin:0;
@@ -111,9 +124,7 @@
     border-bottom :none;
 
 }
-#comments h4{
-    color:rgb(105, 102, 102);
-}
+
 #readlater button{
     background-color: transparent;
     border:1px solid white;

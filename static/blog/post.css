@@ -9,6 +9,13 @@
 }
 .without-img{
     margin:auto;
+    
+}
+.without-img h3{
+    font-size: large;
+}
+.card-body h3{
+    font-size: large;
 }
 .card-link
 {

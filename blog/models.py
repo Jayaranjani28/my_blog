@@ -1,5 +1,6 @@
 from django.db import models
 from django.core.validators import MinLengthValidator
+from django.db.models.fields import DateField
 # Create your models here.
 
 class Tag(models.Model):
@@ -38,5 +39,8 @@ class Comment(models.Model):
     user_email = models.EmailField()
     text = models.TextField(max_length=500)
     post = models.ForeignKey(Post,on_delete=models.CASCADE,related_name="comments")
+    created = models.DateTimeField(auto_now=True)
+    
+
 
     
